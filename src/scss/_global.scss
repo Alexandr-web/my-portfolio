@@ -1,0 +1,54 @@
+@import '../../node_modules/normalize.css/normalize';
+@import '../../node_modules/aos/dist/aos';
+@import './_fonts';
+@import './_vars';
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    resize: none;
+    outline: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    &::selection {
+        color: #000;
+        background-color: #fff;
+    }
+    &::-webkit-scrollbar {
+        width: 10px;
+        background: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: #454545;
+    }
+}
+
+.container {
+    max-width: 1430px;
+    height: auto;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    user-select: none;
+}
+
+@keyframes flying {
+    0% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}

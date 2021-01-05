@@ -1,0 +1,304 @@
+@media (max-width: 1130px) {
+    .container {
+        max-width: 1000px;
+    }
+    .works {
+        &__list-item {
+            flex-direction: column;
+            gap: 40px;
+            align-items: center;
+            &:nth-child(even) {
+                flex-direction: column;
+                gap: 40px;
+                align-items: center;
+            }
+            &-todo-list {
+                &-task-name {
+                    font-size: 1.2em;
+                    width: 300px;
+                    height: 50px;
+                }
+                &-btn {
+                    width: 180px;
+                    font-size: 1.2em;
+                    height: 50px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 880px) {
+    .container {
+        max-width: 800px;
+    }
+    .header {
+        &__btn-open-list {
+            display: flex;
+            width: 40px;
+            height: 35px;
+            cursor: pointer;
+            border: none;
+            background: transparent;
+            position: relative;
+            span {
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
+                background-color: rgba(255, 255, 255, .6);
+                border-radius: 5px;
+                width: 70%;
+                height: 1px;
+                transition: .4s;
+                &:nth-child(1) {
+                    top: 8px;
+                }
+                &:nth-child(2) {
+                    top: 50%;
+                }
+                &:nth-child(3) {
+                    bottom: 8px;
+                }
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(45deg, #000, #303030);
+                z-index: -1;
+                border-radius: 3px;
+            }
+        }
+        &__nav {
+            background-color: rgba(0, 0, 0, .6);
+            position: absolute;
+            top: 0;
+            right: -250px;
+            min-height: 100vh;
+            min-width: 250px;
+            border-radius: 0;
+            transition: right .4s ease-out;
+            &-list {
+                flex-direction: column;
+                &-item {
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+            &-line {
+                display: none;
+            }
+        }
+    }
+    .title {
+        &__block-heading {
+            font-size: 2em;
+        }
+    }
+    .title-heading {
+        font-size: 1.5em;
+    }
+    .skills {
+        padding: 50px 0;
+        &__list {
+            max-width: 450px;
+            &-item {
+                &-heading {
+                    font-size: 1.2em;
+                }
+                &-desc {
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+    .works {
+        &__list-item {
+            &-heading {
+                font-size: 1.5em;
+            }
+        }
+    }
+}
+
+@media (max-width: 670px) {
+    .works {
+        &__list-item-block {
+            width: 100%;
+            &:nth-child(even) {
+                display: flex;
+                justify-content: center;
+            }
+        }
+        &__list-item-card {
+            width: 100%;
+            height: 250px;
+            &-heading {
+                font-size: 1.5em;
+            }
+            &-list-item {
+                font-size: 18px;
+            }
+            &-block-heading {
+                font-size: 1.2em;
+                white-space: nowrap;
+            }
+            &-block img {
+                max-width: 125px;
+            }
+        }
+        &__list-item-todo-list {
+            &-task-name {
+                width: 60%;
+            }
+            &-btn {
+                width: 40%;
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .container {
+        max-width: 400px;
+    }
+    .skills {
+        &__list-line {
+            display: none;
+        }
+    }
+    .works {
+        &__list-item {
+            &-form {
+                width: 100%;
+            }
+            &-data {
+                width: 100%;
+            }
+            &-label {
+                font-size: 1.1em;
+            }
+        }
+        &__list-item-card {
+            width: 100%;
+            height: 190px;
+            &-heading {
+                font-size: 1.2em;
+            }
+            &-list-item {
+                font-size: 16px;
+            }
+            &-block-heading {
+                font-size: 1em;
+                white-space: nowrap;
+            }
+            &-block img {
+                max-width: 125px;
+            }
+        }
+        &__list-item-todo-list {
+            width: 100%;
+            &-task-name {
+                font-size: 1.1em;
+            }
+            &-btn {
+                font-size: 1em;
+            }
+        }
+    }
+}
+
+@media (max-width: 380px) {
+    .works {
+        &__list-item-todo-list {
+            &-task-name {
+                font-size: 1em;
+            }
+            &-btn {
+                font-size: .9em;
+            }
+        }
+    }
+}
+
+@media (max-width: 360px) {
+    .header {
+        &__btn-open-list {
+            z-index: 9;
+        }
+        &__nav {
+            min-width: 200px;
+        }
+    }
+    .container {
+        max-width: 300px;
+    }
+    .title {
+        &__block-heading {
+            font-size: 1.6em;
+        }
+    }
+    .works {
+        &__list-item {
+            &-heading {
+                font-size: 1.3em;
+            }
+            &-desc {
+                font-size: 1em;
+            }
+            &-calc-list-item {
+                font-size: 1em;
+            }
+        }
+        &__list-item-card {
+            width: 100%;
+            height: 135px;
+            &-heading {
+                font-size: 1em;
+            }
+            &-list-item {
+                font-size: 13px;
+            }
+            &-block-heading {
+                font-size: 0.8em;
+                white-space: nowrap;
+            }
+            &-block img {
+                max-width: 80px;
+            }
+        }
+        &__list-item-todo-list {
+            &-task-name {
+                font-size: .9em;
+            }
+            &-btn {
+                padding: 5px;
+                font-size: .7em;
+                letter-spacing: .5px;
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .contacts {
+        &__list-item {
+            img {
+                width: 50px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1150px) {
+    .title {
+        &::before {
+            display: none;
+        }
+    }
+}

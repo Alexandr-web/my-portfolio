@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Портфолио</title>
+</head>
+
+<body>
+    <header class="header" data-aos="fade-down">
+        <div class="container">
+            <button class="header__btn-open-list">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <div class="header__nav-line"></div>
+                    <li class="header__nav-list-item">
+                        <a href="#home">Главная</a>
+                    </li>
+                    <li class="header__nav-list-item">
+                        <a href="#skills">Навыки</a>
+                    </li>
+                    <li class="header__nav-list-item">
+                        <a href="#works">Работы</a>
+                    </li>
+                    <li class="header__nav-list-item">
+                        <a href="#contacts">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="title" id="home">
+        <div class="container">
+            <div class="title__bg">
+                <picture>
+                    <source srcset="./images/photo-1551641145-a1e18544acb9.jpg" media="(max-width: 420px)">
+                    <source srcset="./images/photo-1509966756634-9c23dd6e6815.jpg" media="(max-width: 750px)">
+                    <source srcset="./images/coding-924920.jpg" media="(max-width: 910px)">
+                    <source srcset="./images/code-5113374_1280.jpg" media="(max-width: 990px)">
+                    <img src="./images/photo-1550063873-ab792950096b.jpg" alt="title image">
+                </picture>
+            </div>
+            <div class="title__block">
+                <h1 class="title__block-heading"></h1>
+                <a class="title__block-button" href="#skills">
+                    <img class="title__block-button-img" src="./images/expand-button.svg" alt="button down">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="skills" id="skills">
+        <div class="container">
+            <h2 class="skills__heading title-heading">Мои навыки</h2>
+            <ul class="skills__list" data-aos="zoom-in">
+                <div class="skills__list-line"></div>
+                <li class="skills__list-item">
+                    <h3 class="skills__list-item-heading">
+                        <span>HTML</span>
+                        <img src="./images/check.svg" alt="check" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="250">
+                    </h3>
+                    <p class="skills__list-item-desc">
+                        Это самый базовый строительный блок Веба. Он определяет содержание и структуру веб-контента.
+                    </p>
+                </li>
+                <li class="skills__list-item">
+                    <h3 class="skills__list-item-heading">
+                        <span>CSS</span>
+                        <img src="./images/check.svg" alt="check" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="250">
+                    </h3>
+                    <p class="skills__list-item-desc">
+                        Это код, который я использую для стилизации вашей веб-страницы.
+                    </p>
+                </li>
+                <li class="skills__list-item">
+                    <h3 class="skills__list-item-heading">
+                        <span>JavaScript</span>
+                        <img src="./images/check.svg" alt="check" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="250">
+                    </h3>
+                    <p class="skills__list-item-desc">
+                        Мультипарадигменный язык программирования. Поддерживает объектно-ориентированный, императивный и функциональный стили. Использую для функционала (калькулятор, счетчики, анимации).
+                    </p>
+                </li>
+                <li class="skills__list-item">
+                    <h3 class="skills__list-item-heading">
+                        <span>Gulp</span>
+                        <img src="./images/check.svg" alt="check" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="250">
+                    </h3>
+                    <p class="skills__list-item-desc">
+                        Это таск-менеджер для автоматического выполнения часто используемых задач, написанный на языке программирования JavaScript. Использую для сборки проекта.
+                    </p>
+                </li>
+                <li class="skills__list-item">
+                    <h3 class="skills__list-item-heading">
+                        <span>Scss</span>
+                        <img src="./images/check.svg" alt="check" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="250">
+                    </h3>
+                    <p class="skills__list-item-desc">
+                        Это препроцессор CSS, предназначенный для увеличения уровня абстракции CSS-кода и упрощения файлов каскадных таблиц стилей. Использую для быстрого написания CSS кода.
+                    </p>
+                </li>
+                <li class="skills__list-item">
+                    <h3 class="skills__list-item-heading">
+                        <span>Vue.js</span>
+                        <img src="./images/check.svg" alt="check" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="250">
+                    </h3>
+                    <p class="skills__list-item-desc">
+                        JavaScript-фреймворк с открытым исходным кодом для создания пользовательских интерфейсов. Использую для быстрого написания JavaScript кода.
+                    </p>
+                </li>
+                <li class="skills__list-item">
+                    <h3 class="skills__list-item-heading">
+                        <span>Figma</span>
+                        <img src="./images/check.svg" alt="check" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="250">
+                    </h3>
+                    <p class="skills__list-item-desc">
+                        Это онлайн-сервис для разработки интерфейсов и прототипирования с возможностью организации совместной работы в режиме реального времени. Использую для работы с макетами сайтов.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="works" id="works">
+        <div class="container">
+            <h2 class="works__heading title-heading">Мои работы</h2>
+            <ul class="works__list">
+                <li class="works__list-item">
+                    <div class="works__list-item-block">
+                        <h3 class="works__list-item-heading">Калькулятор</h3>
+                        <p class="works__list-item-desc" data-aos="fade-up">
+                            Калькулятор — электронное вычислительное устройство для выполнения операций над числами или алгебраическими формулами.
+                        </p>
+                    </div>
+                    <div class="works__list-item-block">
+                        <div class="works__list-item-calc" data-aos="flip-left">
+                            <div class="works__list-item-calc-display"></div>
+                            <ul class="works__list-item-calc-list"></ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="works__list-item">
+                    <div class="works__list-item-block">
+                        <h3 class="works__list-item-heading">Часы</h3>
+                        <p class="works__list-item-desc" data-aos="fade-up">
+                            Часы - прибор для определения текущего времени суток и измерения продолжительности временных интервалов в единицах, меньших, чем одни сутки.
+                        </p>
+                    </div>
+                    <div class="works__list-item-block" style="flex-basis: 50%">
+                        <div class="works__list-item-time" data-aos="flip-up"></div>
+                    </div>
+                </li>
+                <li class="works__list-item">
+                    <div class="works__list-item-block">
+                        <h3 class="works__list-item-heading">Кредитная карточка в 3D</h3>
+                        <p class="works__list-item-desc" data-aos="fade-up">
+                            3D эффект сделан с помощью библиотеки Vanilla Tilt.
+                        </p>
+                    </div>
+                    <div class="works__list-item-block">
+                        <div class="works__list-item-card" data-aos="flip-down">
+                            <header class="works__list-item-card-header">
+                                <h3 class="works__list-item-card-heading">Citi</h3>
+                            </header>
+                            <div class="works__list-item-card-main">
+                                <ul class="works__list-item-card-list">
+                                    <li class="works__list-item-card-list-item">
+                                        <span>0</span>
+                                        <span>0</span>
+                                        <span>0</span>
+                                        <span>0</span>
+                                    </li>
+                                    <li class="works__list-item-card-list-item">
+                                        <span>0</span>
+                                        <span>0</span>
+                                        <span>0</span>
+                                        <span>0</span>
+                                    </li>
+                                    <li class="works__list-item-card-list-item">
+                                        <span>0</span>
+                                        <span>0</span>
+                                        <span>0</span>
+                                        <span>0</span>
+                                    </li>
+                                    <li class="works__list-item-card-list-item">
+                                        <span>0</span>
+                                        <span>0</span>
+                                        <span>0</span>
+                                        <span>0</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <footer class="works__list-item-card-footer">
+                                <div class="works__list-item-card-info">
+                                    <div class="works__list-item-card-block">
+                                        <h3 class="works__list-item-card-block-heading">Peter L. Griffin</h3>
+                                    </div>
+                                    <div class="works__list-item-card-block">
+                                        <img src="https://seeklogo.net/wp-content/uploads/2016/11/visa-logo-preview.png" alt="logo visa">
+                                    </div>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                </li>
+                <li class="works__list-item">
+                    <div class="works__list-item-block">
+                        <h3 class="works__list-item-heading">Библиотека valval.js</h3>
+                        <p class="works__list-item-desc" data-aos="fade-up">
+                            Valval.js - библиотека, которая проверяет форму на действительность (валидность) регистрации/входа на сайте. Попробуйте зарегистрироваться.
+                            <br/>Вся библиотека написана на чистом JavaScript. Подробнее вы сможете ознакомиться с ней, перейдя по <a class="works__list-item-link" target="_blank" href="https://github.com/Alexandr-web/valval.js">ссылке.</a>
+                        </p>
+                    </div>
+                    <div class="works__list-item-block">
+                        <form class="works__list-item-form" action="/" method="GET" data-aos="fade-right">
+                            <label class="works__list-item-label" for="name-exp">
+                                Имя
+                                <input class="works__list-item-data" type="text" placeholder="Имя" data-valval="name_exp" id="name-exp">
+                            </label>
+                            <label class="works__list-item-label" for="email-exp">
+                                Эл. почта
+                                <input class="works__list-item-data" type="text" placeholder="Эл. почта" data-valval="email_exp" id="email-exp">
+                            </label>
+                            <label class="works__list-item-label" for="password-exp">
+                                Пароль
+                                <input class="works__list-item-data" type="password" placeholder="Пароль" data-valval="password_exp" id="password-exp">
+                            </label>
+                            <label class="works__list-item-label" for="repeat-password-exp">
+                                Повторите пароль
+                                <input class="works__list-item-data" type="password" placeholder="Повторите пароль" data-valval="repeat-password_exp" id="repeat-password-exp">
+                            </label>
+                            <button class="works__list-item-submit" type="submit" data-valval="submit_exp">Зарегистрироваться</button>
+                        </form>
+                    </div>
+                </li>
+                <li class="works__list-item">
+                    <div class="works__list-item-block">
+                        <h3 class="works__list-item-heading">Список задач</h3>
+                        <p class="works__list-item-desc" data-aos="fade-up">
+                            Список задач - это логическая категория, объединяющая задачи по общему признаку.
+                        </p>
+                    </div>
+                    <div class="works__list-item-block">
+                        <div class="works__list-item-todo-list" data-aos="flip-down">
+                            <div class="works__list-item-todo-list-block works__list-item-todo-list-block-top">
+                                <input class="works__list-item-todo-list-task-name" type="text" placeholder="Название задачи">
+                                <button class="works__list-item-todo-list-btn">Создать задачу</button>
+                            </div>
+                            <div class="works__list-item-todo-list-block works__list-item-todo-list-block-bottom">
+                                <ul class="works__list-item-todo-list-tasks"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="works__list-item">
+                    <div class="works__list-item-block">
+                        <h3 class="works__list-item-heading">Опрос на Vue.js</h3>
+                        <p class="works__list-item-desc" data-aos="fade-up">
+                            Опрос - это выяснение мнения сообщества по тем или иным вопросам.<br/>Этот проект полностью сделан на Vue.js.
+                        </p>
+                    </div>
+                    <div class="works__list-item-block">
+                        <div class="computer" data-aos="fade-left">
+                            <a class="computer__link" target="_blank" href="https://alexandr-web.github.io/quiz/">
+                                <div class="computer__display">
+                                    <img src="./images/quiz.png" alt="quiz">
+                                </div>
+                                <div class="computer__bottom"></div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="works__list-item">
+                    <div class="works__list-item-block">
+                        <h3 class="works__list-item-heading">Одностраничный сайт</h3>
+                        <p class="works__list-item-desc" data-aos="fade-up">
+                            Сделана верстка сайта и чуть-чуть JavaScript.
+                        </p>
+                    </div>
+                    <div class="works__list-item-block">
+                        <div class="computer" data-aos="fade-right">
+                            <a class="computer__link" target="_blank" href="https://alexandr-web.github.io/site-1/">
+                                <div class="computer__display">
+                                    <img src="./images/Screenshot_6.png" alt="site">
+                                </div>
+                                <div class="computer__bottom"></div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="works__list-item">
+                    <div class="works__list-item-block">
+                        <h3 class="works__list-item-heading">Крестики-нолики</h3>
+                        <p class="works__list-item-desc" data-aos="fade-up">
+                            Крестики-нолики - логическая игра между двумя противниками на квадратном поле 3 на 3 клетки или большего размера. Один из игроков играет «крестиками», второй — «ноликами».
+                        </p>
+                    </div>
+                    <div class="works__list-item-block" style="flex-basis: 50%">
+                        <div class="computer" data-aos="fade-right">
+                            <a class="computer__link" target="_blank" href="https://alexandr-web.github.io/crosses-and-circles-game/">
+                                <div class="computer__display">
+                                    <img src="./images/Screenshot_1.png" alt="site">
+                                </div>
+                                <div class="computer__bottom"></div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="contacts" id="contacts">
+        <div class="container">
+            <h2 class="contacts__heading title-heading">Связь со мной</h2>
+            <ul class="contacts__list">
+                <li class="contacts__list-item" data-aos="fade-right">
+                    <a href="https://vk.com/alexandr_fd" target="_blank">
+                        <img src="./images/vk.svg" alt="Вконтакте">
+                    </a>
+                </li>
+                <li class="contacts__list-item" data-aos="fade-down">
+                    <a href="https://github.com/Alexandr-web" target="_blank">
+                        <img src="./images/github.svg" alt="Github">
+                    </a>
+                </li>
+                <li class="contacts__list-item" data-aos="fade-left">
+                    <a href="mailto:https://mail.google.com/mail/u/0/#inbox" target="_blank">
+                        <img src="./images/gmail-logo.svg" alt="Gmail">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <a class="btn-arrow-up" href="#home">
+        <img src="./images/up-arrow.svg" alt="arrow up">
+    </a>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
