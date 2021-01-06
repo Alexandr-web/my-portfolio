@@ -2922,6 +2922,10 @@ img {
   visibility: hidden;
 }
 
+.hide {
+  display: none;
+}
+
 .remove-task {
   -webkit-text-decoration: line-through #000;
           text-decoration: line-through #000;

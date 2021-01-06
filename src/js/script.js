@@ -75,23 +75,18 @@ const sayHello = () => {
 sayHello();
 
 const tabsSkills = () => {
-    const items = document.querySelectorAll('.skills__list-item');
+    const items = document.querySelectorAll('.skills__list-item-desc');
     const btns = document.querySelectorAll('.skills__list-item-heading');
 
-    const showActiveElement = (array, index, height) => array[index].style.height = `${height}px`;
-    const hideOtherElements = (array, height) => array.forEach(item => item.style.height = `${height}px`);
+    const showActiveItem = (index, className) => items[index].classList.remove(className);
+    const hideActiveItem = className => items.forEach(item => item.classList.add(className));
+
+    items.forEach(item => item.classList.add('hide'));
 
     btns.forEach((btn, index) => {
-        let btn_height = +btn.offsetHeight;
-        let default_height_item = +items[index].offsetHeight;
-
-        items[index].style.height = `${btn_height}px`;
-
         btn.addEventListener('click', () => {
-            items[index].style.height = `${default_height_item}px`;
-
-            hideOtherElements(items, btn_height);
-            showActiveElement(items, index, default_height_item);
+          hideActiveItem('hide');
+          showActiveItem(index, 'hide');
         });
     });
 }
