@@ -7,6 +7,14 @@ import './todolist';
 
 AOS.init();
 
+const preolader = () => {
+  const preolader_block = document.querySelector('.preolader');
+
+  window.addEventListener('DOMContentLoaded', () => preolader_block.classList.add('hidden'));
+}
+
+preolader();
+
 const posLine = () => {
     const line = document.querySelector('.header__nav-line');
     const items = document.querySelectorAll('.header__nav-list-item');

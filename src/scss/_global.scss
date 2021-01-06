@@ -52,3 +52,91 @@ img {
         transform: translateY(10px);
     }
 }
+
+.preolader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #191B24;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999;
+  opacity: 1;
+  visibility: visible;
+  transition: .4s;
+  &__list {
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    &-item {
+      position: relative;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(45deg, #4265E1, #42A5E1);
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-radius: 50%;
+        background: linear-gradient(45deg, #4265E1, #42A5E1);
+        opacity: .7;
+      }
+      &:nth-child(1) {
+        &::before {
+          animation: preolader-circle infinite 1.5s ease-in;
+        }
+      }
+      &:nth-child(2) {
+        &::before {
+          animation: preolader-circle infinite 1.5s ease-in;
+          animation-delay: 1.5s;
+        }
+      }
+      &:nth-child(3) {
+        &::before {
+          animation: preolader-circle infinite 1.5s ease-in;
+          animation-delay: 3s;
+        }
+      }
+      &:nth-child(4) {
+        &::before {
+          animation: preolader-circle infinite 1.5s ease-in;
+          animation-delay: 4.5s;
+        }
+      }
+    }
+  }
+}
+
+@keyframes preolader-circle {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    opacity: .8;
+    transform: scale(1);
+  }
+  50% {
+    opacity: .4;
+    transform: scale(2);
+  }
+  75% {
+    opacity: .2;
+    transform: scale(2);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2.2);
+  }
+}
