@@ -23,12 +23,14 @@
         margin: 0 auto;
         &-list {
             display: flex;
-            gap: 20px;
             position: relative;
             align-items: center;
             &-item {
                 font-size: 1.2em;
                 @extend %montserrat-500;
+                &:not(:last-child) {
+                  margin-right: 20px;
+                }
                 a {
                     color: rgba(255, 255, 255, .8);
                 }
@@ -111,7 +113,6 @@
     &__list {
         display: flex;
         flex-direction: column;
-        gap: 30px;
         max-width: 600px;
         position: relative;
         margin: 0 auto;
@@ -131,6 +132,9 @@
             flex-direction: column;
             overflow: hidden;
             transition: height .4s;
+            &:not(:last-child) {
+              margin-bottom: 30px;
+            }
             &-heading {
                 display: flex;
                 @extend %fira-sans-700;
@@ -164,12 +168,14 @@
     &__list {
         display: flex;
         flex-direction: column;
-        gap: 150px;
         &-item {
             display: flex;
             justify-content: space-between;
             &:nth-child(even) {
                 flex-direction: row-reverse;
+            }
+            &:not(:last-child) {
+              margin-bottom: 150px;
             }
             &-block {
                 padding: 0 5px;
@@ -340,13 +346,13 @@
                 flex-direction: column;
                 max-width: 500px;
                 height: auto;
-                gap: 20px;
             }
             &-label {
                 display: flex;
                 flex-direction: column;
                 @extend %roboto-400;
                 font-size: 1.3em;
+                margin-bottom: 20px;
             }
             &-data {
                 @extend %roboto-400;
@@ -384,7 +390,6 @@
                 &-block-top {
                     display: flex;
                     align-items: center;
-                    gap: 20px;
                 }
                 &-task-name {
                     width: 200px;
@@ -393,6 +398,7 @@
                     font-size: 15px;
                     padding: 5px;
                     box-shadow: inset 0 -3px #BE3BFF;
+                    margin-right: 20px;
                 }
                 &-btn {
                     cursor: pointer;
@@ -479,8 +485,10 @@
     &__list {
         display: flex;
         justify-content: center;
-        gap: 50px;
         &-item {
+          &:not(:last-child) {
+            margin-right: 50px;
+          }
             a {
                 img {
                     transition: .4s;

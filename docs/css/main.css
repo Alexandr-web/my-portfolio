@@ -2033,7 +2033,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 20px;
   position: relative;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -2042,6 +2041,10 @@ img {
 
 .header__nav-list-item {
   font-size: 1.2em;
+}
+
+.header__nav-list-item:not(:last-child) {
+  margin-right: 20px;
 }
 
 .header__nav-list-item a {
@@ -2144,7 +2147,6 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 30px;
   max-width: 600px;
   position: relative;
   margin: 0 auto;
@@ -2176,6 +2178,10 @@ img {
   -webkit-transition: height .4s;
   -o-transition: height .4s;
   transition: height .4s;
+}
+
+.skills__list-item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .skills__list-item-heading {
@@ -2223,7 +2229,6 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 150px;
 }
 
 .works__list-item {
@@ -2240,6 +2245,10 @@ img {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+}
+
+.works__list-item:not(:last-child) {
+  margin-bottom: 150px;
 }
 
 .works__list-item-block {
@@ -2476,7 +2485,6 @@ img {
           flex-direction: column;
   max-width: 500px;
   height: auto;
-  gap: 20px;
 }
 
 .works__list-item-label {
@@ -2488,6 +2496,7 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   font-size: 1.3em;
+  margin-bottom: 20px;
 }
 
 .works__list-item-data {
@@ -2544,7 +2553,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 20px;
 }
 
 .works__list-item-todo-list-task-name {
@@ -2555,6 +2563,7 @@ img {
   padding: 5px;
   -webkit-box-shadow: inset 0 -3px #BE3BFF;
           box-shadow: inset 0 -3px #BE3BFF;
+  margin-right: 20px;
 }
 
 .works__list-item-todo-list-btn {
@@ -2668,7 +2677,10 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 50px;
+}
+
+.contacts__list-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .contacts__list-item a img {
