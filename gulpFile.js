@@ -49,4 +49,4 @@ function watching() {
 }
 
 exports.build = parallel(images, styles, html, js);
-exports.default = parallel(exports.build, watching);
+exports.default = parallel(exports.build, server, watching);

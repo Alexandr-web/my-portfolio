@@ -1771,7 +1771,7 @@ template {
   font-weight: 700;
 }
 
-.skills__list-item-desc, .works__list-item-desc, .works__list-item-calc-list-item, .works__list-item-label, .works__list-item-data, .works__list-item-todo-list {
+.skills__list-item-desc, .works__info-desc, .works__list-item-desc, .works__list-item-calc-list-item, .works__list-item-label, .works__list-item-data, .works__list-item-todo-list {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
@@ -2219,6 +2219,30 @@ img {
 
 .works__heading {
   padding-bottom: 60px;
+}
+
+.works__info {
+  margin-top: 50px;
+  text-align: center;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.works__info-desc {
+  font-size: 1.3em;
+}
+
+.works__info-desc a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: underline;
 }
 
 .works__list {

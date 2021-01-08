@@ -165,6 +165,22 @@
     &__heading {
         padding-bottom: 60px;
     }
+    &__info {
+      margin-top: 50px;
+      text-align: center;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &-desc {
+        @extend %roboto-400;
+        font-size: 1.3em;
+        a {
+          color: rgba(255, 255, 255, .7);
+          text-decoration: underline;
+        }
+      }
+    }
     &__list {
         display: flex;
         flex-direction: column;
