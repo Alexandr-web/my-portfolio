@@ -2862,6 +2862,12 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .header__nav-list-item {
+    margin: 0;
+  }
+  .header__nav-list-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
   .header__nav-list-item a {
     color: #fff;
   }

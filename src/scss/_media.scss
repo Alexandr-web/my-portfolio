@@ -85,6 +85,10 @@
             &-list {
                 flex-direction: column;
                 &-item {
+                  margin: 0;
+                  &:not(:last-child) {
+                    margin-bottom: 20px;
+                  }
                     a {
                         color: #fff;
                     }
