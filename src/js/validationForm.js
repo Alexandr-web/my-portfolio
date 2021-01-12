@@ -5,29 +5,61 @@ const validationForm = () => {
         name_exp: {
             required: true,
             minLength: 3,
-            classValid: 'valid',
-            classInvalid: 'invalid',
-            name: true
+            name: true,
+            handlerWhenInvalidElement: function() {
+              const warning = document.querySelector('.works__list-item-form-warning-name');
+              
+              warning.classList.add('show');
+            },
+            handlerWhenValidElement: function() {
+              const warning = document.querySelector('.works__list-item-form-warning-name');
+              
+              warning.classList.remove('show');
+            }
         },
         email_exp: {
             required: true,
-            classValid: 'valid',
-            classInvalid: 'invalid',
-            mail: true
+            mail: true,
+            handlerWhenInvalidElement: function() {
+              const warning = document.querySelector('.works__list-item-form-warning-email');
+              
+              warning.classList.add('show');
+            },
+            handlerWhenValidElement: function() {
+              const warning = document.querySelector('.works__list-item-form-warning-email');
+              
+              warning.classList.remove('show');
+            }
         },
         password_exp: {
             required: true,
             minLength: 6,
-            classValid: 'valid',
-            classInvalid: 'invalid',
-            password: true
+            password: true,
+            handlerWhenInvalidElement: function() {
+              const warning = document.querySelector('.works__list-item-form-warning-password');
+              
+              warning.classList.add('show');
+            },
+            handlerWhenValidElement: function() {
+              const warning = document.querySelector('.works__list-item-form-warning-password');
+              
+              warning.classList.remove('show');
+            }
         },
         'repeat-password_exp': {
             required: true,
-            classValid: 'valid',
-            classInvalid: 'invalid',
             repeatPassword: true,
-            repeatAt: 'password_exp'
+            repeatAt: 'password_exp',
+            handlerWhenInvalidElement: function() {
+              const warning = document.querySelector('.works__list-item-form-warning-repeat-password');
+              
+              warning.classList.add('show');
+            },
+            handlerWhenValidElement: function() {
+              const warning = document.querySelector('.works__list-item-form-warning-repeat-password');
+              
+              warning.classList.remove('show');
+            }
         },
         submit_exp: {
             textWhenValid: 'Зарегистрироваться',

@@ -85,9 +85,8 @@
             &-list {
                 flex-direction: column;
                 &-item {
-                  margin: 0;
                   &:not(:last-child) {
-                    margin-bottom: 20px;
+                    margin: 0 0 20px 0;
                   }
                     a {
                         color: #fff;
@@ -100,8 +99,13 @@
         }
     }
     .title {
-        &__block-heading {
+        &__block {
+          &-heading {
             font-size: 2em;
+          }
+          &-subheading {
+            font-size: 1.3em;
+          }
         }
     }
     .title-heading {
@@ -215,6 +219,14 @@
             }
         }
     }
+    .title {
+      &__block {
+        &-subheading {
+          font-size: 1.1em;
+          padding: 5px;
+        }
+      }
+  }
 }
 
 @media (max-width: 380px) {
@@ -243,9 +255,18 @@
         max-width: 300px;
     }
     .title {
-        &__block-heading {
-            font-size: 1.6em;
-        }
+        .title {
+          &__block {
+            &-heading {
+              font-size: 1.6em;
+            }
+            &-subheading {
+              font-size: 1em;
+              padding: 10px;
+              line-height: 25px;
+            }
+          }
+      }
     }
     .works {
         &__list-item {

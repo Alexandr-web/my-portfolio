@@ -48,6 +48,13 @@
             </div>
             <div class="title__block">
                 <h1 class="title__block-heading"></h1>
+                <h2 class="title__block-subheading">
+                  Меня зовут Яковлев Александр.<br/><em>Junior Front-end developer</em>
+                  <span class="title__block-subheading-line title__block-subheading-line-1"></span>
+                  <span class="title__block-subheading-line title__block-subheading-line-2"></span>
+                  <span class="title__block-subheading-line title__block-subheading-line-3"></span>
+                  <span class="title__block-subheading-line title__block-subheading-line-4"></span>
+                </h2>
                 <a class="title__block-button" href="#skills">
                     <img class="title__block-button-img" src="./images/expand-button.svg" alt="button down">
                 </a>
@@ -217,22 +224,38 @@
                     </div>
                     <div class="works__list-item-block">
                         <form class="works__list-item-form" action="/" method="GET" data-aos="fade-right">
-                            <label class="works__list-item-label" for="name-exp">
-                                Имя
-                                <input class="works__list-item-data" type="text" placeholder="Имя" data-valval="name_exp" id="name-exp">
-                            </label>
-                            <label class="works__list-item-label" for="email-exp">
-                                Эл. почта
-                                <input class="works__list-item-data" type="text" placeholder="Эл. почта" data-valval="email_exp" id="email-exp">
-                            </label>
-                            <label class="works__list-item-label" for="password-exp">
-                                Пароль
-                                <input class="works__list-item-data" type="password" placeholder="Пароль" data-valval="password_exp" id="password-exp">
-                            </label>
-                            <label class="works__list-item-label" for="repeat-password-exp">
-                                Повторите пароль
-                                <input class="works__list-item-data" type="password" placeholder="Повторите пароль" data-valval="repeat-password_exp" id="repeat-password-exp">
-                            </label>
+                            <div class="works__list-item-form-block">
+                              <input class="works__list-item-data" type="text" placeholder="Имя" data-valval="name_exp">
+                              <div class="works__list-item-form-warning works__list-item-form-warning-name">
+                                <p class="works__list-item-form-warning-desc">
+                                  Данные введены неправильно!
+                                </p>
+                              </div>
+                            </div>
+                            <div class="works__list-item-form-block">
+                              <input class="works__list-item-data" type="text" placeholder="Эл. почта" data-valval="email_exp">
+                              <div class="works__list-item-form-warning works__list-item-form-warning-email">
+                                <p class="works__list-item-form-warning-desc">
+                                  Данные введены неправильно!
+                                </p>
+                              </div>
+                            </div>
+                            <div class="works__list-item-form-block">
+                              <input class="works__list-item-data" type="password" placeholder="Пароль" data-valval="password_exp">
+                              <div class="works__list-item-form-warning works__list-item-form-warning-password">
+                                <p class="works__list-item-form-warning-desc">
+                                  Данные введены неправильно!
+                                </p>
+                              </div>
+                            </div>
+                            <div class="works__list-item-form-block">
+                              <input class="works__list-item-data" type="password" placeholder="Повторите пароль" data-valval="repeat-password_exp">
+                              <div class="works__list-item-form-warning works__list-item-form-warning-repeat-password">
+                                <p class="works__list-item-form-warning-desc">
+                                  Данные введены неправильно!
+                                </p>
+                              </div>
+                            </div>
                             <button class="works__list-item-submit" type="submit" data-valval="submit_exp">Зарегистрироваться</button>
                         </form>
                     </div>

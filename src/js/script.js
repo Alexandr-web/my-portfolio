@@ -61,6 +61,7 @@ posLine();
 
 const sayHello = () => {
     const heading = document.querySelector('.title__block-heading');
+    const subheading = document.querySelector('.title__block-subheading');
     const button = document.querySelector('.title__block-button');
 
     let message = 'Добро пожаловать';
@@ -73,7 +74,9 @@ const sayHello = () => {
 
         if (count >= message.length - 1) {
             clearInterval(interval);
+
             button.classList.add('visible');
+            subheading.classList.add('show-left-animation');
         }
 
         heading.innerText += message[count];
