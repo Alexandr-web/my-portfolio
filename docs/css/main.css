@@ -2490,14 +2490,14 @@ img {
 }
 
 .works__list-item-calc-display {
+  background: -webkit-gradient(linear, left bottom, left top, from(#B44148), to(#872649));
+  background: -o-linear-gradient(bottom, #B44148, #872649);
+  background: linear-gradient(to top, #B44148, #872649);
   text-align: right;
   height: 140px;
   padding: 20px;
   font-size: 1.8em;
   color: #F5DFE4;
-  background: -webkit-gradient(linear, left bottom, left top, from(#B44148), to(#872649));
-  background: -o-linear-gradient(bottom, #B44148, #872649);
-  background: linear-gradient(to top, #B44148, #872649);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
