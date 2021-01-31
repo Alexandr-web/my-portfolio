@@ -268,6 +268,9 @@
                 font-size: 1.2em;
                 line-height: 28px;
                 @extend %roboto-400;
+                position: relative;
+                background: #000;
+                box-shadow: -2px 8px 0 5px #5DE1B5;
             }
             &-calc {
                 width: 350px;
