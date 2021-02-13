@@ -2485,8 +2485,8 @@ img {
   line-height: 28px;
   position: relative;
   background: #000;
-  -webkit-box-shadow: -2px 8px 0 5px #5DE1B5;
-          box-shadow: -2px 8px 0 5px #5DE1B5;
+  -webkit-box-shadow: -6px 6px 0 5px #AF83E2;
+          box-shadow: -6px 6px 0 5px #AF83E2;
 }
 
 .works__list-item-calc {
