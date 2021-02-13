@@ -7,13 +7,13 @@ import './todolist';
 
 AOS.init();
 
-const preolader = () => {
-  const preolader_block = document.querySelector('.preolader');
+const preloader = () => {
+  const preloader_block = document.querySelector('.preloader');
 
-  window.addEventListener('DOMContentLoaded', () => preolader_block.classList.add('hidden'));
+  window.addEventListener('DOMContentLoaded', () => preloader_block.classList.add('hidden'));
 }
 
-preolader();
+preloader();
 
 const posLine = () => {
     const line = document.querySelector('.header__nav-line');
