@@ -1,7 +1,5 @@
 import AOS from 'aos';
 import './calculator';
-import './time';
-import './card';
 import './validationForm';
 import './todolist';
 

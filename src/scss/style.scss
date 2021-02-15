@@ -355,59 +355,6 @@
                     }
                 }
             }
-            &-time {
-                font-size: 3.5em;
-                @extend %montserrat-500;
-                letter-spacing: 2px;
-                text-align: center;
-            }
-            &-card {
-                width: 600px;
-                height: 300px;
-                border-radius: 5px;
-                display: flex;
-                flex-direction: column;
-                background: linear-gradient(45deg, #8CD42E, #FFD866);
-                padding: 2%;
-                color: #fff;
-                justify-content: space-between;
-                &-heading {
-                    font-size: 2em;
-                    letter-spacing: 2px;
-                    text-transform: uppercase;
-                    @extend %fira-sans-700;
-                }
-                &-main {
-                    padding: 3% 0;
-                }
-                &-list {
-                    display: flex;
-                    align-items: center;
-                    gap: 20px;
-                    &-item {
-                        font-size: 20px;
-                        @extend %montserrat-500;
-                    }
-                }
-                &-info {
-                    display: flex;
-                    justify-content: space-between;
-                }
-                &-block {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    img {
-                        max-width: 200px;
-                    }
-                    &-heading {
-                        font-size: 1.5em;
-                        letter-spacing: 1px;
-                        @extend %fira-sans-700;
-                        text-transform: uppercase;
-                    }
-                }
-            }
             &-form {
                 display: flex;
                 flex-direction: column;
