@@ -1761,7 +1761,7 @@ template {
   font-family: 'Roboto', sans-serif;
 }
 
-.header__nav-list-item, .title__block-subheading, .works__list-item-heading, .works__list-item-form-warning-desc, .works__list-item-submit, .works__list-item-todo-list-tasks-item span {
+.header__nav-list-item, .title__block-subheading, .works__list-item-heading, .works__list-item-form-warning-desc, .works__list-item-submit, .works__list-item-todo-list-tasks-item span, .works__list-item-technologies-title, .works__list-item-technologies-list-item {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
 }
@@ -2505,14 +2505,8 @@ img {
 
 .works__list-item-desc {
   max-width: 600px;
-  border: 3px solid #fff;
-  padding: 20px;
   font-size: 1.2em;
   line-height: 28px;
-  position: relative;
-  background: #000;
-  -webkit-box-shadow: -6px 6px 0 5px #AF83E2;
-          box-shadow: -6px 6px 0 5px #AF83E2;
 }
 
 .works__list-item-calc {
@@ -2842,6 +2836,42 @@ img {
           transform: rotateZ(-45deg);
 }
 
+.works__list-item-technologies {
+  padding-top: 20px;
+  border-top: 3px solid #fff;
+  margin-top: 15px;
+}
+
+.works__list-item-technologies-title {
+  font-size: 1.5em;
+  padding-bottom: 15px;
+}
+
+.works__list-item-technologies-list-item {
+  font-size: 1.1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.works__list-item-technologies-list-item::before {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: -o-linear-gradient(45deg, #50E3C1, #35E3A6);
+  background: linear-gradient(45deg, #50E3C1, #35E3A6);
+  margin-right: 10px;
+}
+
+.works__list-item-technologies-list-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
 .contacts {
   min-height: 200px;
   overflow: hidden;
@@ -3076,6 +3106,9 @@ img {
   .works__list-item-heading {
     font-size: 1.5em;
   }
+  .works__list-item-technologies-title {
+    font-size: 1.2em;
+  }
 }
 
 @media (max-width: 670px) {
@@ -3199,6 +3232,12 @@ img {
   .works__list-item-calc-list-item {
     font-size: 1em;
   }
+  .works__list-item-technologies-title {
+    font-size: 1em;
+  }
+  .works__list-item-technologies-list-item {
+    font-size: .9em;
+  }
   .works__list-item-card {
     width: 100%;
     height: 135px;
@@ -3286,4 +3325,54 @@ img {
 .remove-task {
   -webkit-text-decoration: line-through #000;
           text-decoration: line-through #000;
+}
+
+.valval-invalid {
+  background: rgba(227, 46, 85, 0.8);
+  color: #fff;
+}
+
+.valval-invalid::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.valval-invalid::-moz-placeholder {
+  color: #fff;
+}
+
+.valval-invalid:-ms-input-placeholder {
+  color: #fff;
+}
+
+.valval-invalid::-ms-input-placeholder {
+  color: #fff;
+}
+
+.valval-invalid::placeholder {
+  color: #fff;
+}
+
+.valval-valid {
+  background: rgba(164, 227, 116, 0.8);
+  color: #fff;
+}
+
+.valval-valid::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.valval-valid::-moz-placeholder {
+  color: #fff;
+}
+
+.valval-valid:-ms-input-placeholder {
+  color: #fff;
+}
+
+.valval-valid::-ms-input-placeholder {
+  color: #fff;
+}
+
+.valval-valid::placeholder {
+  color: #fff;
 }

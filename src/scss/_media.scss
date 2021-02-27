@@ -130,6 +130,11 @@
             &-heading {
                 font-size: 1.5em;
             }
+            &-technologies {
+              &-title {
+                font-size: 1.2em;
+              }
+            }
         }
     }
 }
@@ -278,6 +283,14 @@
             }
             &-calc-list-item {
                 font-size: 1em;
+            }
+            &-technologies {
+              &-title {
+                font-size: 1em;
+              }
+              &-list-item {
+                font-size: .9em;
+              }
             }
         }
         &__list-item-card {
