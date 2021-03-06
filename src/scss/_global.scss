@@ -67,71 +67,58 @@ img {
   opacity: 1;
   visibility: visible;
   transition: .4s;
-  &__list {
-    padding: 0 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    &-item {
-      border-radius: 50%;
-      width: 40px;
-      height: 40px;
-      background: linear-gradient(45deg, #4265E1, #42A5E1);
-      &:nth-child(1) {
-        animation: preolader-circle-1 infinite .5s ease-out alternate;
-      }
-      &:nth-child(2) {
-        animation: preolader-circle-2 infinite .5s ease-out alternate;
-        animation-delay: .1s;
-      }
-      &:nth-child(3) {
-        animation: preolader-circle-3 infinite .5s ease-out alternate;
-        animation-delay: .2s;
-      }
-      &:nth-child(4) {
-        animation: preolader-circle-4 infinite .5s ease-out alternate;
-        animation-delay: .3s;
-      }
-      &:not(:last-child) {
-        margin-right: 50px;
-      }
-    }
+  &__circle {
+    transform-origin: center;
+    stroke-dasharray: 900;
+    transition: 1s;
+    fill: transparent;
+  }
+  &__line {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
   }
 }
 
-@keyframes preolader-circle-1 {
+.anim-circle {
+  animation: preloader 1s infinite alternate ease;
+}
+
+.anim-line {
+  animation: stroke-line 5s forwards ease;
+  animation-delay: .8s;
+}
+
+.end-anim-circle {
+  stroke-dashoffset: 0;
+  stroke: #60E1B7;
+  fill: #60E1B7;
+}
+
+@keyframes preloader {
   0% {
-    transform: translateY(20px);
+    stroke-dashoffset: 900;
+    transform: rotateZ(0deg);
+    stroke: #4198E1;
+  }
+  25% {
+    stroke: #C4FCE0;
+  }
+  50% {
+    stroke: #5DFCE0;
   }
   100% {
-    transform: translateY(-20px);
+    stroke-dashoffset: 400;
+    transform: rotateZ(360deg);
+    stroke: #5DC4E0;
   }
 }
 
-@keyframes preolader-circle-2 {
+@keyframes stroke-line {
   0% {
-    transform: translateY(15px);
+    stroke-dashoffset: 1000;
   }
   100% {
-    transform: translateY(-15px);
-  }
-}
-
-@keyframes preolader-circle-3 {
-  0% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(-10px);
-  }
-}
-
-@keyframes preolader-circle-4 {
-  0% {
-    transform: translateY(5px);
-  }
-  100% {
-    transform: translateY(-5px);
+    stroke-dashoffset: 0;
   }
 }
 

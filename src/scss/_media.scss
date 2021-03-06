@@ -341,16 +341,8 @@
     }
 }
 
-@media (max-width: 375px) {
-  .preloader {
-    &__list {
-      &-item {
-        width: 25px;
-        height: 25px;
-        &:not(:last-child) {
-          margin-right: 10px;
-        }
-      }
-    }
-  }
-}
+// @media (max-width: 375px) {
+//   .preloader {
+
+//   }
+// }

@@ -5,13 +5,30 @@ import './todolist';
 
 AOS.init();
 
-const preloader = () => {
-  const preloader_block = document.querySelector('.preloader');
+const hidePreloader = () => {
+  const preloader = document.querySelector('.preloader');
+  const circle = document.querySelector('.preloader__circle');
+  const line = document.querySelector('.preloader__line');
+  const page = document.documentElement;
 
-  window.addEventListener('DOMContentLoaded', () => preloader_block.classList.add('hidden'));
+  window.addEventListener('DOMContentLoaded', () => {
+    circle.classList.remove('anim-circle');
+    circle.classList.add('end-anim-circle');
+
+    line.classList.add('anim-line');
+
+    setTimeout(() => {
+      preloader.classList.add('hidden');
+      page.classList.remove('overflow-hidden');
+    }, 1800);
+  });
+
+  window.addEventListener('load', () => {
+    page.classList.add('overflow-hidden');
+  });
 }
 
-preloader();
+hidePreloader();
 
 const posLine = () => {
     const line = document.querySelector('.header__nav-line');
