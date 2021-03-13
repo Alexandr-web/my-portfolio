@@ -72,15 +72,9 @@
             background: linear-gradient(45deg, #702B70, #BE3165);
         }
         &:nth-child(3) {
-            background: linear-gradient(45deg, #E039C9, #7C7FE3);
-        }
-        &:nth-child(4) {
             background: linear-gradient(45deg, #563483, #26B1CE);
         }
-        &:nth-child(5) {
-            background: linear-gradient(45deg, #7F21D6, #DC5979);
-        }
-        &:nth-child(6) {
+        &:nth-child(4) {
             background: linear-gradient(45deg, #F5918B, #8478F8);
         }
     }
@@ -116,6 +110,8 @@
           }
         }
         &-button {
+            border: none;
+            background: transparent;
             width: max-content;
             display: block;
             margin: 50px auto 0;
@@ -142,48 +138,59 @@
     }
     &__list {
         display: flex;
-        flex-direction: column;
-        max-width: 600px;
-        position: relative;
-        margin: 0 auto;
-        &-line {
-            position: absolute;
-            width: 2px;
-            height: 80%;
-            top: 0;
-            bottom: 0;
-            margin: auto 0;
-            left: -30px;
-            background-color: #fff;
-            transition: .4s;
-        }
+        justify-content: center;
+        flex-wrap: wrap;
         &-item {
+            width: 30%;
+            padding: 20px;
+            min-height: 250px;
+            background: #2E3138;
+            border-radius: 3px;
             display: flex;
             flex-direction: column;
+            align-items: center;
             overflow: hidden;
-            transition: height .4s;
-            &:not(:last-child) {
-              margin-bottom: 30px;
+            margin: 10px;
+            box-shadow: 0 3px 2px 0 #2c2f36;
+            position: relative;
+            z-index: 1;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                border-radius: inherit;
+                transition: .5s;
+                background: linear-gradient(45deg, #5501D1, #360076);
+                transform: translateX(100%);
+            }
+            &:hover {
+                box-shadow: none;
+            }
+            &:hover::before {
+                transform: translateX(0%);
+            }
+            &:hover &-heading,
+            &:hover &-desc {
+                color: #fff;
             }
             &-heading {
-                display: flex;
                 @extend %fira-sans-700;
-                align-items: center;
                 font-size: 1.5em;
-                justify-content: space-between;
-                span {
-                    cursor: pointer;
-                }
-                img {
-                    width: 25px;
-                    height: 25px;
-                }
+                transition: .5s;
+                color: rgba(255, 255, 255, .7);
+                text-align: center;
+                padding-bottom: 15px;
             }
             &-desc {
+                text-align: center;
                 @extend %roboto-400;
-                font-size: 1.1em;
-                padding: 2% 2% 2% 0;
+                transition: .5s;
                 line-height: 25px;
+                color: rgba(255, 255, 255, .7);
             }
         }
     }
@@ -492,12 +499,12 @@
                 padding-bottom: 15px;
               }
               &-list {
-                padding: 10px;
-                background: linear-gradient(45deg, #1C1E1F, #292A2D);
-                border-radius: 4px;
                 &-item {
                   @extend %montserrat-500;
                   font-size: 1.1em;
+                  padding: 10px;
+                  background: linear-gradient(45deg, #1C1E1F, #292A2D);
+                  border-radius: 4px;
                   display: flex;
                   align-items: center;
                   &::before {
@@ -571,6 +578,7 @@
 }
 
 .btn-arrow-up {
+    border: none;
     position: fixed;
     bottom: 20px;
     right: 20px;

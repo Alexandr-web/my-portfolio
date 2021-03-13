@@ -5,6 +5,18 @@ import './todolist';
 
 AOS.init();
 
+const scrollTo = (selectorBtn, selectorSection) => {
+  const btn = document.querySelector(selectorBtn);
+  const section = document.querySelector(selectorSection);
+
+  btn.addEventListener('click', () => {
+    section.scrollIntoView({ block: 'start', behavior: 'smooth' });
+  });
+}
+
+scrollTo('.title__block-button', '.skills');
+scrollTo('.btn-arrow-up', 'body');
+
 const hidePreloader = () => {
   const preloader = document.querySelector('.preloader');
   const circle = document.querySelector('.preloader__circle');
@@ -96,25 +108,6 @@ const posLine = () => {
 }
 
 posLine();
-
-const tabsSkills = () => {
-    const items = document.querySelectorAll('.skills__list-item-desc');
-    const btns = document.querySelectorAll('.skills__list-item-heading');
-
-    const showActiveItem = (index, className) => items[index].classList.remove(className);
-    const hideActiveItem = className => items.forEach(item => item.classList.add(className));
-
-    items.forEach(item => item.classList.add('hide'));
-
-    btns.forEach((btn, index) => {
-        btn.addEventListener('click', () => {
-          hideActiveItem('hide');
-          showActiveItem(index, 'hide');
-        });
-    });
-}
-
-tabsSkills();
 
 const showButtonUp = () => {
     const btn = document.querySelector('.btn-arrow-up');
