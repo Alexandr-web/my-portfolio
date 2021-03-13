@@ -9,9 +9,8 @@ const hidePreloader = () => {
   const preloader = document.querySelector('.preloader');
   const circle = document.querySelector('.preloader__circle');
   const line = document.querySelector('.preloader__line');
-  const page = document.documentElement;
 
-  window.addEventListener('DOMContentLoaded', () => {
+  window.addEventListener('load', () => {
     circle.classList.remove('anim-circle');
     circle.classList.add('end-anim-circle');
 
@@ -19,16 +18,40 @@ const hidePreloader = () => {
 
     setTimeout(() => {
       preloader.classList.add('hidden');
-      page.classList.remove('overflow-hidden');
     }, 1800);
-  });
-
-  window.addEventListener('load', () => {
-    page.classList.add('overflow-hidden');
   });
 }
 
 hidePreloader();
+
+const switchingGradientsOnHomePage = selectorGradients => {
+  let count = 0;
+
+  const gradients = document.querySelectorAll(selectorGradients);
+  const ms = 3500;
+
+  const showActiveEl = num => gradients[num].classList.add('show');
+  const hideActiveEl = () => gradients.forEach(item => item.classList.remove('show'));
+
+  showActiveEl(count);
+
+  setInterval(() => {
+    count++;
+
+    checkCount();
+    hideActiveEl();
+    showActiveEl(count);
+  }, ms);
+
+  function checkCount() {
+    if (count > gradients.length - 1) {
+      count = 0;
+    }
+  }
+}
+
+switchingGradientsOnHomePage('.title__gradient');
+switchingGradientsOnHomePage('.contacts__gradient');
 
 const posLine = () => {
     const line = document.querySelector('.header__nav-line');
@@ -73,32 +96,6 @@ const posLine = () => {
 }
 
 posLine();
-
-const sayHello = () => {
-    const heading = document.querySelector('.title__block-heading');
-    const subheading = document.querySelector('.title__block-subheading');
-    const button = document.querySelector('.title__block-button');
-
-    let message = 'Добро пожаловать';
-    let count = -1;
-
-    message = message.split('');
-
-    const interval = setInterval(() => {
-        count++;
-
-        if (count >= message.length - 1) {
-            clearInterval(interval);
-
-            button.classList.add('visible');
-            subheading.classList.add('show-left-animation');
-        }
-
-        heading.innerText += message[count];
-    }, 80);
-}
-
-sayHello();
 
 const tabsSkills = () => {
     const items = document.querySelectorAll('.skills__list-item-desc');

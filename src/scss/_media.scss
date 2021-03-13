@@ -260,17 +260,15 @@
         max-width: 300px;
     }
     .title {
-        .title {
-          &__block {
-            &-heading {
-              font-size: 1.6em;
-            }
-            &-subheading {
-              font-size: 1em;
-              padding: 10px;
-              line-height: 25px;
-            }
-          }
+      &__block {
+        &-heading {
+          font-size: 1.6em;
+        }
+        &-subheading {
+          font-size: 1em;
+          padding: 10px;
+          line-height: 25px;
+        }
       }
     }
     .works {
@@ -332,17 +330,3 @@
         }
     }
 }
-
-@media (max-width: 1150px) {
-    .title {
-        &::before {
-            display: none;
-        }
-    }
-}
-
-// @media (max-width: 375px) {
-//   .preloader {
-
-//   }
-// }

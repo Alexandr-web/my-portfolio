@@ -16,18 +16,18 @@
 }
 
 body {
-    background-color: #000;
+    background-color: #111418;
     color: #fff;
-    &::selection {
-        color: #000;
-        background-color: #fff;
-    }
     &::-webkit-scrollbar {
         width: 10px;
         background: transparent;
     }
     &::-webkit-scrollbar-thumb {
         background-color: #454545;
+    }
+    &::selection {
+        color: #000;
+        background-color: #fff;
     }
 }
 
@@ -42,15 +42,6 @@ img {
     max-width: 100%;
     height: auto;
     user-select: none;
-}
-
-@keyframes flying {
-    0% {
-        transform: translateY(-10px);
-    }
-    100% {
-        transform: translateY(10px);
-    }
 }
 
 .preloader {
@@ -122,46 +113,11 @@ img {
   }
 }
 
-@keyframes border-line-1 {
-  0% {
-    opacity: 0;
-    transform: translateY(100%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(-100%);
-  }
-}
-
-@keyframes border-line-2 {
-  0% {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(100%);
-  }
-}
-
-@keyframes border-line-3 {
-  0% {
-    opacity: 0;
-    transform: translateY(-100%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(100%);
-  }
-}
-
-@keyframes border-line-4 {
-  0% {
-    opacity: 0;
-    transform: translateX(100%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(-100%);
-  }
+@keyframes flying {
+    0% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(5px);
+    }
 }
