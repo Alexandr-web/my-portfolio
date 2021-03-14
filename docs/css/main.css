@@ -1790,6 +1790,18 @@ template {
   scroll-behavior: smooth;
 }
 
+*::-moz-selection, *::after::-moz-selection, *::before::-moz-selection {
+  color: #000;
+  background-color: #fff;
+}
+
+*::selection,
+*::after::selection,
+*::before::selection {
+  color: #000;
+  background-color: #fff;
+}
+
 body {
   background-color: #111418;
   color: #fff;
@@ -1802,16 +1814,6 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-thumb {
   background-color: #454545;
-}
-
-body::-moz-selection {
-  color: #000;
-  background-color: #fff;
-}
-
-body::selection {
-  color: #000;
-  background-color: #fff;
 }
 
 .container {
@@ -2056,9 +2058,9 @@ img {
   height: 100%;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: .5s;
-  -o-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
 }
 
 .title__gradient:nth-child(1) {

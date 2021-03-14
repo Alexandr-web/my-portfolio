@@ -13,6 +13,10 @@
     outline: none;
     text-decoration: none;
     scroll-behavior: smooth;
+    &::selection {
+      color: #000;
+      background-color: #fff;
+    }
 }
 
 body {
@@ -24,10 +28,6 @@ body {
     }
     &::-webkit-scrollbar-thumb {
         background-color: #454545;
-    }
-    &::selection {
-        color: #000;
-        background-color: #fff;
     }
 }
 
